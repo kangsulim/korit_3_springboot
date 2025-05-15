@@ -1,9 +1,9 @@
-package com.example.cardatabase2.web;
+package com.example.cardatabase.web;
 
-import com.example.cardatabase2.domain.Car;
-import com.example.cardatabase2.domain.CarRepository;
-import com.example.cardatabase2.domain.Owner;
-import com.example.cardatabase2.domain.OwnerRepository;
+import com.example.cardatabase.domain.Car;
+import com.example.cardatabase.domain.CarRepository;
+import com.example.cardatabase.domain.Owner;
+import com.example.cardatabase.domain.OwnerRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -1,4 +1,4 @@
-package com.example.cardatabase2.domain;
+package com.example.cardatabase.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

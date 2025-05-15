@@ -1,6 +1,6 @@
-package com.example.cardatabase2;
+package com.example.cardatabase;
 
-import com.example.cardatabase2.domain.*;
+import com.example.cardatabase.domain.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
