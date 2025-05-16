@@ -15,6 +15,5 @@ public class OpenApiConfig {
                         .description("My Car Stock")
                         .version("1.0")
                 );
-
     }
 }
