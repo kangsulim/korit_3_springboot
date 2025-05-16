@@ -13,12 +13,14 @@ public class Cardatabase2Application implements CommandLineRunner {
 
 	private final CarRepository repository;
 	private final OwnerRepository oRepository;
+	private final AppUserRepository uRepository;
     private String[] args;
 
-    public Cardatabase2Application(CarRepository repository, OwnerRepository oRepository) {
+    public Cardatabase2Application(CarRepository repository, OwnerRepository oRepository, AppUserRepository uRepository) {
 		this.repository = repository;
 		this.oRepository = oRepository;
-	}
+        this.uRepository = uRepository;
+    }
 
 	public static void main(String[] args) {
 		
@@ -41,5 +43,10 @@ public class Cardatabase2Application implements CommandLineRunner {
 		for (Car car : repository.findAll()) {
 			logger.info("브랜드: {}, 모델명: {}", car.getBrand(), car.getModel());
 		}
+
+		// 사용자명: user, 비밀번호: user
+		AppUser user1 = uRepository.save(new AppUser("user", "$2y$04$3Al8xee5DklaCIC3fGTI5OnvBKITNy3AWmDpAeeMc6B2Mz6aGDozu", "USER"));
+		// 사용자명: admin, 비밀번호: admin
+		AppUser user2 = uRepository.save(new AppUser("admin", "$2y$04$.dGdzGkkWgW4jjGUAuWVF.UtPvdjJL05cDCycAtToYdz2bIrWf8XW", "ADMIN"));
 	}
 }
