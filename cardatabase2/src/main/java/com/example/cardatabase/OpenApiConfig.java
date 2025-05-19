@@ -17,3 +17,6 @@ public class OpenApiConfig {
                 );
     }
 }
+
+// swagger UI 볼 수 있도록 하는 클래스
+// http://localhost:8080/swagger-ui/index.html

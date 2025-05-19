@@ -41,9 +41,7 @@ public class JwtService {
                     .getBody()
                     .getSubject();
 
-            if (user != null) {
-                return user;
-            }
+            return user;
         }
 
         return null;
